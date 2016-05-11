@@ -1,0 +1,56 @@
+<html ng-app="sticker-scroll-demo">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>Sticker Scroll</title>
+	<link href="../bower_components/ionic/release/css/ionic.min.css" rel="stylesheet">
+	<script src="../dist/app.js"></script>
+
+</head>
+
+<body>
+	<ion-view view-title="Home">
+		<sticker-scroll sticky-class="cover_story_fixed" isOnlyCollapse="true" collapse-class="collapse">
+			<div class="list">
+				<sticker-element 
+					collapse-class="collapse"
+		            is-collapsible="false"
+		            group-list-class="group-list">
+					<div class="item item-divider">Group 0</div>
+				</sticker-element>
+				<div class="item item-text-wrap">Item 0</div>
+				<div class="item item-text-wrap">Item 1</div>
+				<div class="item item-text-wrap">Item 2</div>
+				<div class="item item-text-wrap">Item 3</div>
+				<div class="item item-text-wrap">Item 4</div>
+			</div>
+			<div class="list">
+				<sticker-element 
+					collapse-class="collapse"
+		            is-collapsible="false"
+		            group-list-class="group-list">
+					<div class="item item-divider">Group 1</div>
+				</sticker-element>
+				<div class="item item-text-wrap">Item 0</div>
+				<div class="item item-text-wrap">Item 1</div>
+				<div class="item item-text-wrap">Item 2</div>
+				<div class="item item-text-wrap">Item 3</div>
+				<div class="item item-text-wrap">Item 4</div>
+			</div>
+			<div class="list">
+				<sticker-element 
+					collapse-class="collapse"
+		            is-collapsible="false"
+		            group-list-class="group-list">
+					<div class="item item-divider">Group 2</div>
+				</sticker-element>
+				<div class="item item-text-wrap">Item 0</div>
+				<div class="item item-text-wrap">Item 1</div>
+				<div class="item item-text-wrap">Item 2</div>
+				<div class="item item-text-wrap">Item 3</div>
+				<div class="item item-text-wrap">Item 4</div>
+			</div>
+		</sticker-scroll>
+	</ion-view>
+</body>
+</html>
