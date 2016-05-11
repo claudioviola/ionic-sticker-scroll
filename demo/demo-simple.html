@@ -10,9 +10,10 @@
 
 <body>
 	<ion-view view-title="Home">
-		<sticker-scroll sticky-class="cover_story_fixed" isOnlyCollapse="true" collapse-class="collapse">
-			<div class="list">
+		<sticker-scroll>
+			<div class="group-list">
 				<sticker-element 
+					index="0"
 					collapse-class="collapse"
 		            is-collapsible="false"
 		            group-list-class="group-list">
@@ -24,8 +25,9 @@
 				<div class="item item-text-wrap">Item 3</div>
 				<div class="item item-text-wrap">Item 4</div>
 			</div>
-			<div class="list">
+			<div class="group-list">
 				<sticker-element 
+					index="1"
 					collapse-class="collapse"
 		            is-collapsible="false"
 		            group-list-class="group-list">
@@ -37,12 +39,27 @@
 				<div class="item item-text-wrap">Item 3</div>
 				<div class="item item-text-wrap">Item 4</div>
 			</div>
-			<div class="list">
+			<div class="group-list">
 				<sticker-element 
+					index="2"
 					collapse-class="collapse"
 		            is-collapsible="false"
 		            group-list-class="group-list">
 					<div class="item item-divider">Group 2</div>
+				</sticker-element>
+				<div class="item item-text-wrap">Item 0</div>
+				<div class="item item-text-wrap">Item 1</div>
+				<div class="item item-text-wrap">Item 2</div>
+				<div class="item item-text-wrap">Item 3</div>
+				<div class="item item-text-wrap">Item 4</div>
+			</div>
+			<div class="group-list">
+				<sticker-element 
+					index="3"
+					collapse-class="collapse"
+		            is-collapsible="false"
+		            group-list-class="group-list">
+					<div class="item item-divider">Group 3</div>
 				</sticker-element>
 				<div class="item item-text-wrap">Item 0</div>
 				<div class="item item-text-wrap">Item 1</div>

@@ -4,6 +4,8 @@
 *.iws
 .idea
 
-
+sticker-scroll.sublime-project
+sticker-scroll.sublime-workspace 
+dist
 node_modules
 bower_components

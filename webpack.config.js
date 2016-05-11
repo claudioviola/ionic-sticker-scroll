@@ -12,16 +12,8 @@ module.exports = {
         filename: 'app.js'
     },
     // inline-source-map eval-source-map cheap-module-source-map
-    devtool: 'eval-source-map',
+    devtool: 'inline-source-map',
     module: {
-        // loaders: [{
-        //     test: /\.js?$/,
-        //     include: [
-        //         path.resolve(__dirname, 'src')
-        //     ],
-        //     exclude: /node_modules/,
-        //     loaders: ['ng-annotate', 'babel-loader']
-        // }]
         loaders: [{
               test: /\.js?$/,
               exclude: /(node_modules|bower_components)/,

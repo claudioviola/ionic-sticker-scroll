@@ -1,6 +1,6 @@
 import { assign } from 'lodash';
 
-
+ 
 export default class StickerScroll {
     /*ngInject*/
     constructor($scope, $compile, $element, $ionicPosition, $ionicScrollDelegate, StickerScrollService){

@@ -36,22 +36,21 @@ var paths = {
 };
 
 
+
 gulp.task('webpack', function() {
   return gulp.src('src/app.js')
     .pipe(webpack(webpackConfig), null, function(err, stats) {
             console.log(stats);
         })
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('dist/'))
 });
 
 
 gulp.task('default', ['browser-sync', 'webpack'], function () {
-    // add browserSync.reload to the tasks array to make
-    // all browsers reload after tasks are complete.
     gulp.watch([paths.js, paths.html], browserSync.reload);
 });
 
-gulp.task('browser-sync', function () {
+gulp.task('browser-sync',function () {
     browserSync({
         server: {
             baseDir: "./",
